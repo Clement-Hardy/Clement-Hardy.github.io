@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MS-PS v2: a Multi-Scale Encoder Decoder Transformer for Universal Photometric Stereo">
+  <meta name="keywords" content="MS-PS, Universal PS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MS-PS v2: a Multi-Scale Encoder Decoder Transformer for Universal Photometric Stereo</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link href="./static/css/css2.css" rel="stylesheet">
+  
+  <link href="./static/css/css.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+   <link rel="stylesheet" href="./static/css/zoom.css" />
+
+  <script src="./static/css/jquery.min.js"></script>
+  <script defer="defer" src="./static/css/fontawesome.all.min.js"></script>
+  <script src="./static/css/bulma-carousel.min.js"></script>
+  <script src="./static/css/bulma-slider.min.js"></script>
+  <script src="./static/css/index.js"></script>
+  <script src="./static/css/script.js"></script>
+
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MS-PS v2: a Multi-Scale Encoder Decoder Transformer for Universal Photometric Stereo</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Clément Hardy</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/yvainqueau">Yvain Quéau</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://tschumperle.users.greyc.fr/">David Tschumperlé</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Normandie Université, UNICAEN, CNRS, ENSICAEN, GREYC laboratory, Caen, France</span>
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <a href="https://www.unicaen.fr/"><img style="width:17%; padding-right: 15px; padding-top: 10px;" src="static/logo/unicaen.png"> </a>
+            <a href="https://www.greyc.fr/"><img style="width:25%; padding-right: 15px; padding-top: 10px;" src="static/logo/greyc.png"> </a>
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+            
+            
+            
+            <div class="is-size-5 publication-authors">
+              <img style="width:24%; padding-right: 1%; padding-top: 1%;" src="static/images/golden_snail_img.jpg"> </a>
+              <img style="width:24%; padding-right: 1%;" src="static/images/golden_snail.jpg"> </a>
+              <img style="width:24%; padding-right: 1%; padding-top: 1%;" src="static/images/flower_img.jpg"> </a>
+              <img style="width:24%; padding-right: 1%;" src="static/images/flower.jpg"> </a>
+            </div>
+            
+                 
+      
+      
+      
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	
+	
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Visual DiLiGenT Results</h2>
+    <div class="content has-text-justified">
+      <p>
+
+      </p>
+    </div>
+    
+            <div class="container-button">
+            <button type="button" class="button-dili" onclick="changeImage('ballPNG')">ball</button>
+            <button type="button" class="button-dili" onclick="changeImage('bearPNG')">bear</button>
+            <button type="button" class="button-dili" onclick="changeImage('buddhaPNG')">buddha</button>
+            <button type="button" class="button-dili" onclick="changeImage('catPNG')">cat</button>
+            <button type="button" class="button-dili" onclick="changeImage('cowPNG')">cow</button>
+            <button type="button" class="button-dili" onclick="changeImage('gobletPNG')">goblet</button>
+            <button type="button" class="button-dili" onclick="changeImage('harvestPNG')">harvest</button>
+            <button type="button" class="button-dili" onclick="changeImage('pot1PNG')">pot1</button>
+            <button type="button" class="button-dili" onclick="changeImage('pot2PNG')">pot2</button>
+            <button type="button" class="button-dili" onclick="changeImage('readingPNG')">reading</button>
+            </div>
+            
+            
+              <div id="example1" class="bal-container-small">
+      
+                <div class="bal-after">
+                  <img id="example1_pred" src="./static/dili/bearPNG.jpg">
+                  <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                    Ours
+                  </div>
+                </div>
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                  <img id="example1_gt" src="./static/dili/bearPNG_gt.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                      Ground Truth
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle"">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+   <div id="a0" class="main-container-zoom">
+    <div class="holy-grail-body">
+   <!-- BEGIN main column ================================================================================ -->
+   <main class="holy-grail-content">
+   <link rel="stylesheet" href="prism-tomorrow-indoition.css"><link rel="stylesheet"
+    href="./static/css/zoomist.min.css">
+   <script src="./static/js/zoomist.min.js"></script>
+   <div id="zoomdemo" data-zoomist-src="./static/zoom/meshroom.jpg"
+       class="zoomist-container">
+   <div class="zoomist-wrapper">
+   <img class="zoomist-image" src="./static/zoom/meshroom.jpg">
+   </div><div class="zoomist-slider">
+     <div class="zoomist-slider-main zoomist-slider-horizontal">
+     </div>
+   </div><div class="zoomist-zoomer"><div class="zoomist-in-zoomer">
+
+   </div></div></div>
+   </div>
+   
+   
+</section>
+
+
+
+
+<script>
+    new BeforeAfter({
+        id: '#example1'
+    });
+</script>
+
+<script> 
+
+function changeImage(image)
+{
+var img = document.getElementById("example1_pred");
+img.src="./static/dili/"+image+".jpg;
+
+var gt = document.getElementById("example1_gt");
+gt.src="./static/dili/"+image+"_gt.jpg";
+
+return false;
+}
+
+</script>
+
+
+
+<script>
+new Zoomist('#zoomdemo', {
+  height: '100%',
+  zoomer: true,
+  slider: {
+    el: false,
+    direction: 'horizontal'
+  }
+})
+</script>
+  </main>
+  
+ </div>
+
+ <script>
+  const content = document.querySelector('.holy-grail-content');
+  const sidebarCurrent = document.getElementById('sbmenu');
+  function onPageLoaded() {
+   scrollnav.init(content, {
+    sections: 'h2',
+    subSections: '',
+    insertTarget: sidebarCurrent,
+    insertLocation: 'append',
+    easingStyle: 'easeOutQuint'
+   });   
+  }
+  if (window.addEventListener) {
+     // For modern browsers
+     window.addEventListener("load", onPageLoaded);
+  } else if (window.attachEvent) {
+     // For older versions of Internet Explorer
+     window.attachEvent("onload", onPageLoaded);
+  } 
+ </script>
+
+
+
+</body>
+</html>
